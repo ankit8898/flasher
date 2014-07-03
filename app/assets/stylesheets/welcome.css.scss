@@ -2,7 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.foo {
-	border: 1px dotted;
-	background: #dddddd;
+ul
+{
+    list-style-type: none;
+}
+
+.row.extramargin {margin: 50px auto 10px !important;}
+
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: white;
 }

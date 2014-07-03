@@ -1,10 +1,12 @@
 #flasher{'ng-controller' => 'FlasherCtrl'}
-  .icons{"ng-repeat" => "i in icons"}
-    {{i}}
-  %button.btn.btn-primary.btn-lg.btn-block{type: "button"} Flasher - Click me!
-  - 600.times do 
-    .col-md-1
-      %h2
-        %span.glyphicon{"ng-class" => '{"glyphicon-camera": true}'}
+  = render 'form'
+  {{showIcon}}
+  #allIcons
+    %ul
+      - 600.times do |row_number|
+        = content_tag :span, class: "col-md-1" do 
+          %li{"ng-show" => "rowNumberMultiple() == true"}
+            %h1
+              = content_tag :span, nil,class: 'glyphicon {{randomIcon}} {{color}}'
       
 
