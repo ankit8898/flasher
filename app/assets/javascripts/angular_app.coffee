@@ -1,0 +1,1 @@
+@FlasherApp = angular.module('FlasherApp', [])
